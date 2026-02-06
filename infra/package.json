@@ -1,0 +1,20 @@
+{
+    "name": "aws-org-required-tags",
+    "main": "index.ts",
+    "scripts": {
+        "refresh-tags": "ts-node scripts/fetch-supported-resources.ts",
+        "build": "tsc",
+        "deploy": "pulumi up",
+        "preview": "pulumi preview"
+    },
+    "devDependencies": {
+        "@types/node": "^18",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.0.0"
+    },
+    "dependencies": {
+        "@pulumi/aws": "^7.0.0",
+        "@pulumi/awsx": "^3.0.0",
+        "@pulumi/pulumi": "^3.113.0"
+    }
+}

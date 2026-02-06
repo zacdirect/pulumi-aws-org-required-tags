@@ -1,0 +1,13 @@
+config:
+  aws:region: us-east-1
+  # IMPORTANT: Start with "detective" mode to monitor violations without blocking!
+  # After confirming no issues, switch to "preventive" to enforce
+  aws-org-required-tags:enforcementMode: detective
+  aws-org-required-tags:requiredTags:
+    Environment:
+      - Development
+      - Staging
+      - Production
+    Owner: []
+    CostCenter: []
+    Project: []
